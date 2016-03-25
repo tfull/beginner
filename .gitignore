@@ -1,3 +1,6 @@
+a.out
 *.o
 *.hi
 *.class
+*.cmi
+*.cmo
