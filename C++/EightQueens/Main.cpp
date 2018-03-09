@@ -79,6 +79,13 @@ bool search(char **board){
     return false;
 }
 
+void freeBoard(char **board){
+    for(int i = 0; i < SIZE; i++){
+        delete board[i];
+    }
+    delete board;
+}
+
 int main(){
     char **board = read();
     if(search(board)){
@@ -91,5 +98,6 @@ int main(){
     }else{
         std::cout << "impossible" << std::endl;
     }
+    freeBoard(board);
     return 0;
 }
