@@ -87,13 +87,13 @@ int main(){
     }
 
     for(int i = 0; i < n; i++){
-        delete [] edge[i];
+        delete[] edge[i];
     }
-    delete edge;
+    delete[] edge;
 
-    delete previous;
-    delete distance;
-    delete vertex;
+    delete[] previous;
+    delete[] distance;
+    delete[] vertex;
 
     return 0;
 }

@@ -81,9 +81,9 @@ bool search(char **board){
 
 void freeBoard(char **board){
     for(int i = 0; i < SIZE; i++){
-        delete board[i];
+        delete[] board[i];
     }
-    delete board;
+    delete[] board;
 }
 
 int main(){
